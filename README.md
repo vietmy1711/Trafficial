@@ -76,7 +76,7 @@
 ![alt text](https://cdn.discordapp.com/attachments/373838562921021443/802923327802966056/unknown.png)
 
 ## Tác giả
-- Nguyễn Việt Mỹ - 175200772@gm.uit.edu.vn
+- Nguyễn Việt Mỹ - 17520772@gm.uit.edu.vn
 - Trương Nguyễn Tuấn Nam - 17520785@gm.uit.edu.vn
 
 ## Giấy phép
