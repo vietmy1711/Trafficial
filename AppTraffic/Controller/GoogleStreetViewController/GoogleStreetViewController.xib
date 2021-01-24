@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GoogleStreetViewController" customModule="AppTraffic" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="pWS-3l-dOB" id="gt9-Il-s8u"/>
+                <outlet property="panoramaView" destination="yaH-dq-zT8" id="EEw-j8-PDB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yaH-dq-zT8" customClass="GMSPanoramaView">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWS-3l-dOB">
+                    <rect key="frame" x="12" y="56" width="60" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="3Cs-vn-6bB"/>
+                        <constraint firstAttribute="height" constant="60" id="YPU-lf-wX8"/>
+                    </constraints>
+                    <state key="normal" image="chevron.backward.circle.fill" catalog="system"/>
+                    <connections>
+                        <action selector="backBtnClicked:" destination="-1" eventType="touchUpInside" id="OR8-I7-NcV"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="yaH-dq-zT8" secondAttribute="bottom" id="9VM-hi-piX"/>
+                <constraint firstItem="pWS-3l-dOB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="12" id="EGb-FR-d7c"/>
+                <constraint firstAttribute="trailing" secondItem="yaH-dq-zT8" secondAttribute="trailing" id="K8z-zB-vgs"/>
+                <constraint firstItem="yaH-dq-zT8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dAs-ec-dJ8"/>
+                <constraint firstItem="pWS-3l-dOB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="r8U-7Z-Jeo"/>
+                <constraint firstItem="yaH-dq-zT8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="u2q-9t-TpK"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="110"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.backward.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
